@@ -8,6 +8,8 @@ public class StreakTask extends Task{
 	public StreakTask(String desc, int month, int day) {
 		super(desc, month, day);
 		count = 0;
+		
+		type = "streak";
 	}
 	
 	public void complete() {

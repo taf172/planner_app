@@ -4,12 +4,19 @@ import java.util.Calendar;
 public abstract class Task {
 	String description;
 	Calendar date;
+	String type;
 	boolean complete = false;
 	
 	public Task(String desc, int month, int day) {
 		description = desc;
 		date = Calendar.getInstance();
 		date.set(date.get(date.YEAR), month, day);
+		
+		type = "NullType";
+	}
+	
+	public String getType() {
+		return type;
 	}
 	
 	public String getDescription() {

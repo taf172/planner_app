@@ -8,6 +8,8 @@ public class RepeatTask extends Task{
 	public RepeatTask(String desc, int month, int day, int cycle) {
 		super(desc, month, day);
 		this.cycle = cycle;
+		
+		type = "repeat";
 	}
 	
 	public void complete() {

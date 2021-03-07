@@ -6,6 +6,8 @@ public class CarryOverTask extends Task{
 	
 	public CarryOverTask(String desc, int month, int day) {
 		super(desc, month, day);
+		
+		type = "carryover";
 	}
 	
 	public void pastDue() {
